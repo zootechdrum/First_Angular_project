@@ -9,11 +9,13 @@ import { Recipe } from '../recipe.model';
 export class RecipesListComponent implements OnInit {
 
   recipes: Recipe[] = [
-    new Recipe (' A test Recipe', 'This is a test', 'https://cdn.pixabay.com/photo/2017/05/11/19/44/fruit-2305192_960_720.jpg')
+    new Recipe  ('A recipe', 'This is going to have eggs', 'http://www.newdesignfile.com/postpic/2013/12/food-photography_377871.jpg')
   ];
-  constructor() { }
+
+  constructor() {
+    console.log(this.recipes);
+  }
 
   ngOnInit() {
   }
-
 }
