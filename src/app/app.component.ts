@@ -7,4 +7,10 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   name = 'Cesar Gomez';
+  navigationStatus = 'recipe';
+
+  onNavigate(feature: string) {
+    this.navigationStatus = feature;
+  }
+
 }
