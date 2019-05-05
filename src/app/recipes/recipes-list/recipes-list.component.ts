@@ -12,6 +12,7 @@ export class RecipesListComponent implements OnInit {
     new Recipe  ('A recipe', 'This is going to have eggs', 'http://www.newdesignfile.com/postpic/2013/12/food-photography_377871.jpg')
   ];
 
+
   constructor() {
   }
 
@@ -19,7 +20,7 @@ export class RecipesListComponent implements OnInit {
   }
 
   onRecipeSelected(recipe: Recipe) {
-
+    this.recipeWasSelected.emit(recipe);
   }
 
 }
