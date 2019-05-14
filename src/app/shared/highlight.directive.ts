@@ -1,10 +1,10 @@
 import { Directive, OnInit, Renderer2, ElementRef, HostListener } from '@angular/core';
-import { MockNgModuleResolver } from '@angular/compiler/testing';
 
-@Directive({
-  selector: '[appBetterHighlight]'
+@Directive ({
+  selector: '[appBlueHighlight]'
 })
-export class BetterHighlightDirective implements OnInit {
+
+export class BlueHighlightDirective implements OnInit {
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
 
