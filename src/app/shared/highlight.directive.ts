@@ -1,10 +1,10 @@
 import { Directive, OnInit, Renderer2, ElementRef, HostListener } from '@angular/core';
 
 @Directive ({
-  selector: '[appBlueHighlight]'
+  selector: '[appPinkHighlight]'
 })
 
-export class BlueHighlightDirective implements OnInit {
+export class PinkHighlightDirective implements OnInit {
 
   constructor(private elRef: ElementRef, private renderer: Renderer2) {}
 
