@@ -1,5 +1,6 @@
 import { Component, OnInit, Input} from '@angular/core';
 import { RecipeService } from '../../recipe.service';
+import { Ingredient } from 'src/app/shared/ingredients.model';
 
 
 @Component({
@@ -10,7 +11,7 @@ import { RecipeService } from '../../recipe.service';
 
 export class RecipeItemComponent implements OnInit {
 
-  @Input() element: {name: string, description: string, imagePath: string};
+  @Input() element: {name: string, description: string, imagePath: string, Ingredient: []};
 
 
   constructor(private recipeService: RecipeService) { }
@@ -19,7 +20,7 @@ export class RecipeItemComponent implements OnInit {
   }
 
   onSelected() {
-    this.recipeService.recipeSelected.emit(this.element);
+    this.recipeService.recipeSelected.emit( this.element );
   }
 
 }
