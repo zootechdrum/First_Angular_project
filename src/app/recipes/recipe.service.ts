@@ -15,5 +15,7 @@ export class RecipeService {
   getRecipe() {
     return this.recipes.slice();
   }
+  constructor() {
+  }
 
 }

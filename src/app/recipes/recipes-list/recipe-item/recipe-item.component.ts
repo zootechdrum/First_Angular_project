@@ -11,7 +11,7 @@ import { Ingredient } from 'src/app/shared/ingredients.model';
 
 export class RecipeItemComponent implements OnInit {
 
-  @Input() element: {name: string, description: string, imagePath: string, Ingredient: []};
+  @Input() element: {name: string, description: string, imagePath: string, ingredients: []};
 
 
   constructor(private recipeService: RecipeService) { }
